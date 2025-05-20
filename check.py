@@ -17,6 +17,7 @@ TARGET_CHANNEL_ID = 1373649734845075517
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
+intents.message_content = True  # 이 줄이 꼭 있어야 함
 tree = bot.tree  # ✅ tree 선언 추가
 
 # 시간 포맷 함수
